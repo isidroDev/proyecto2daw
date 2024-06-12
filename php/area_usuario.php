@@ -165,5 +165,5 @@ $link->close();
 </div>
 
 <?php
-include 'footer.php';
+include 'vistas/footer.php';
 ?>
