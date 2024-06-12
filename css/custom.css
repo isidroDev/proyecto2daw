@@ -1,0 +1,204 @@
+/************* Imports *************/
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/lovelo?styles=25962');
+
+/************* Estilo de uso general *************/
+
+        html, body {
+            height: 100%;
+            font-family: 'Poppins', sans-serif;
+            height: auto;
+        }
+
+        footer{
+            margin-top: auto;
+        }
+
+
+        .container {
+            margin-top: 2em;
+        }
+
+        .centrado{
+            text-align: center;
+            margin-top: 100px;
+        }
+
+
+
+/************* Estilo para el nav *************/
+
+        nav{
+            background-color: black;
+            font-family: 'work Sans';          
+        }
+
+        .navbar {
+            margin-top: 7%;
+            /* Ajusta este valor para cambiar la separación */
+        }
+
+        .nav-item-custom {
+            margin-left: 25px;
+            /* Ajusta este valor para cambiar el margen */
+        }
+
+        @media (max-width: 991.98px) {
+            .nav-item-custom1 {
+                margin-left: 25px;
+                /* Ajusta este valor para cambiar el margen */
+            }
+        }
+
+        .nav-item-custom1 {
+            margin-right: 25px;
+            /* Ajusta este valor para cambiar el margen */
+        }
+
+
+        .navbar-logo {
+            position: absolute;
+             top: -110px; /* Adjust this value as needed */
+             left: 50%;
+             transform: translateX(-50%); 
+             
+         }
+         
+         .navbar-logo img {
+             height: 90px; /* Adjust based on your logo's height */
+         
+             
+         }
+         
+         .nav-link:hover {
+             color: #FFE600 !important;
+         }
+         
+         
+         /* Estilo para aplicar por debajo de los 991.98px. El logo cambiará*/
+         @media screen and (max-width: 991.98px) {
+             .navbar-logo {
+                 top: 0px; 
+             }
+         
+             .navbar-logo img {
+                 height: 30px; 
+                 margin-top: 10px;
+             }
+         }
+
+
+
+
+/************* Estilo para formularios *************/
+
+        form {
+            width: 300px;
+            margin: 0 auto; /* Esto centra el formulario horizontalmente */
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"], textarea {
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+
+/************* Estilo para precio y boton compra (paypal) *************/
+
+        .price-card {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .price {
+            font-size: 2rem;
+            font-weight: bold;
+        }
+        .btn-apuntarme {
+            background-color: #FFE600;
+            color: #000;
+            border: none;
+            font-weight: bold;
+        }
+        .btn-apuntarme:hover {
+            background-color: #FFE600;
+            color: #000;
+        }
+        .login-link {
+            display: block;
+            margin-top: 10px;
+            font-size: 0.875rem;
+            color: #FFE600;
+        }
+        .login-link:hover {
+            color: #FFE600;
+            text-decoration: underline;
+        }
+        .divider {
+            border-left: 2px solid #dee2e6;
+            height: 60px;
+            margin: 0 20px;
+        }
+
+/************* Estilo los acordeones de cada curso *************/
+
+        .no-border .accordion-item,
+        .no-border .accordion-button {
+            border: none;
+        }
+
+
+
+        .accordion-item .accordion-collapse {
+            border: 1px solid #ddd;
+            border-top: none;
+        }
+
+
+
+/************* Estilo especifico para los menús *************/
+
+        .menu-link {
+            color: white;
+            font-weight: bold;
+            font-size: large;
+        }
+    
+        .email-style {
+        color: #FFE600;
+        font-weight: bold; 
+        font-size: large; 
+        
+    }
+
+/************* Estilo especifico para el curso completo (donde se integran todos los modulos) *************/
+
+    .textoCursoCompleto {
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+    
+    .boton {
+        font-size: 1rem;
+    }
+    @media (min-width: 768px) {
+        .textoCursoCompleto {
+            font-size: 1.1rem;
+            font-weight: bold;
+            
+        }
+        .boton {
+            font-size: 0.8rem;
+        }
+        
+        .d-custom-block {
+        display: block !important;
+      }
+    }
