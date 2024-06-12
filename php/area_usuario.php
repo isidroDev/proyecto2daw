@@ -44,7 +44,21 @@ $link->close();
             <?php foreach ($cursos as $curso) : ?>
                 <li>
                     <?php if ($curso['id'] == 1 && $curso['modulo_id'] == null) : ?>
-                        <a href="/preparadoratcae.php?m=curso_completo"><?php echo $curso['curso_nombre']; ?></a>
+                        <div class="col-4">
+                            <a href="/preparadoratcae.php?m=curso_completo" style="text-decoration: none; color: inherit;">
+                                <div class="card" style="width: 100%;">
+                                    <img src="/img/curso_pruebas_libres.png" class="card-img-top" alt="TBE">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Curso Pruebas Libres FP TCAE</h5>
+                                        <p class="card-text">Curso Completo</p>
+                                        <div class="d-flex flex-column align-items-center mt-extra">
+                                            <button class="btn btn-primary">Comenzar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
                     <?php elseif ($curso['id'] == 1 && $curso['modulo_id'] == 1) : ?>
                         <div class="col-4">
                             <a href="/preparadoratcae.php?m=cursos/pruebas_libres/modulo_1" style="text-decoration: none; color: inherit;">
