@@ -8,7 +8,7 @@
 </div>
 <!-- Aquí va el contenido de la sección -->
 <div class="container">
-  
+  <div>
   <div class="row">
     <div class="col-12 col-md-4 ">
       <a href="/preparadoratcae.php?m=curso_completo" style="text-decoration: none; color: inherit;">
