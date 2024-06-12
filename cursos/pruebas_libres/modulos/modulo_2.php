@@ -51,9 +51,9 @@ $stmt->close();
                     <!-- Formulario de PayPal solo si el usuario no ha comprado el módulo -->
                     <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
                         <input type="hidden" name="cmd" value="_s-xclick" />
-                        <input type="hidden" name="hosted_button_id" value="L4UTPPYDK299E" />
+                        <input type="hidden" name="hosted_button_id" value="FMKPBE9K5UDD2" />
                         <input type="hidden" name="currency_code" value="EUR" />
-                        <input type="image" src="https://www.paypalobjects.com/es_XC/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" title="PayPal, la forma rápida y segura de pagar en Internet." alt="Comprar ahora" class="btn btn-apuntarme mt-2" />
+                        <input type="image" src="https://www.paypalobjects.com/es_XC/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" title="PayPal, la forma rápida y segura de pagar en Internet." alt="Comprar ahora" />
                     </form>
                     <?php else: ?>
                 <!-- Enlace para redirigir a la página de acceso si el usuario no está conectado -->
