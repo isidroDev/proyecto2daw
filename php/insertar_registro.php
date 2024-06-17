@@ -24,11 +24,11 @@ if (mysqli_num_rows($resultado_email) > 0) {
     $_SESSION['mensaje'] = "El DNI ya está registrado";
     header("Location: /preparadoratcae.php?m=registro");
 } else {
-    // Registrar, email, password_hash, fecha_registro, dni y comunidad_autonoma
-    $consulta = "INSERT INTO usuarios (email, password, fecha_registro, dni, comunidad) VALUES (?, ?, NOW(), ?, ?)";
+       // Registrar, email, password_hash, fecha_registro, dni, comunidad_autonoma, nombre, apellidos y movil
+    $consulta = "INSERT INTO usuarios (email, password, fecha_registro, dni, comunidad, nombre, apellidos, movil) VALUES (?, ?, NOW(), ?, ?, ?, ?, ?)";
     $consulta_preparada = mysqli_prepare($link, $consulta);
     $hash = password_hash($_POST['password'], PASSWORD_DEFAULT);
-    mysqli_stmt_bind_param($consulta_preparada, "ssss", $_POST['email'], $hash, $_POST['dni'], $_POST['comunidad']);
+    mysqli_stmt_bind_param($consulta_preparada, "sssssss", $_POST['email'], $hash, $_POST['dni'], $_POST['comunidad'], $_POST['nombre'], $_POST['apellidos'], $_POST['movil']);
     mysqli_stmt_execute($consulta_preparada);
 
     // Insertar si se ha realizado correctamente el registro
